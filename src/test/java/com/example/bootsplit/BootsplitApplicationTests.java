@@ -41,6 +41,12 @@ class BootsplitApplicationTests {
     }
 
     @Test
+    public void t2(){
+        User user= User.builder().id(1).build();
+        System.out.print("---------------------------------"+user.toString());
+    }
+
+    @Test
     public void t1(){
         User user= User.builder().id(1).build();
         Page<User> userPage = (Page<User>) userService.selectUserPage(user);
